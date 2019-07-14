@@ -2,15 +2,12 @@ package com.qw.sample.guide;
 
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.Toast;
 import com.qw.sample.R;
 import com.qw.sample.utils.ApiGuideUtils;
-import com.qw.sample.utils.Utils;
-import com.qw.soul.permission.Constants;
 
 /**
  * if your project based on Activity
