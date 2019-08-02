@@ -5,6 +5,8 @@ import android.app.AppOpsManager;
 import android.content.Context;
 import android.os.Binder;
 import android.os.Build;
+
+import com.qw.soul.permission.PermissionConfig;
 import com.qw.soul.permission.debug.PermissionDebug;
 
 import java.lang.reflect.Method;
@@ -44,6 +46,9 @@ class AppOpsChecker implements PermissionChecker {
     @Override
     public boolean check() {
         if (null == permission) {
+            return true;
+        }
+        if (PermissionConfig.skipOldRom) {
             return true;
         }
         switch (permission) {

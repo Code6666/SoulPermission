@@ -12,11 +12,10 @@
 
 ```java
 dependencies {
-    implementation 'com.qw:soulpermission:1.1.8'
+    implementation 'com.qw:soulpermission:1.2.1_x'
 }
 
 ```
-[1.1.8 ReleaseNote](https://github.com/soulqw/SoulPermission/releases/tag/1.1.8)
 ## Usage：
 
 #### 基本用法：

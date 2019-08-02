@@ -66,6 +66,16 @@ public class SoulPermission {
     }
 
     /**
+     * 是否跳过旧的系统权限检查
+     * 默认6.0 以下使用 AppOps 检查，跳过的话 6.0以下全部为true
+     *
+     * @param isSkip 是否跳过
+     */
+    public static void skipOldRom(boolean isSkip) {
+        PermissionConfig.skipOldRom = isSkip;
+    }
+
+    /**
      * init
      * no necessary
      * invoke it when auto init failed
