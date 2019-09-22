@@ -91,6 +91,13 @@ public class ApiGuideSupportFragment extends Fragment {
                         ApiGuideUtils.getTopActivity(v);
                     }
                 });
+        findViewById(R.id.checkAndRequestWriteSystemSettings)
+                .setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        ApiGuideUtils.checkAndRequestWriteSystemSettings(v);
+                    }
+                });
 
         return root;
     }

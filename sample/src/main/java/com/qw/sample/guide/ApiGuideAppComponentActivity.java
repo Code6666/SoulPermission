@@ -89,5 +89,12 @@ public class ApiGuideAppComponentActivity extends AppCompatActivity {
                         ApiGuideUtils.getTopActivity(v);
                     }
                 });
+        findViewById(R.id.checkAndRequestWriteSystemSettings)
+                .setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        ApiGuideUtils.checkAndRequestWriteSystemSettings(v);
+                    }
+                });
     }
 }
